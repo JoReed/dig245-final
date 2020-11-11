@@ -9,3 +9,7 @@
   bottom:0;
   background-color: #e0e0e0;
 }
+
+.intro {
+  background-image: linear-gradient(to right, #e0e0e0 , #d0eaf5);
+}
