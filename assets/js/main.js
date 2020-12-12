@@ -28,10 +28,10 @@ $(document).on('click','#submit',function(){
     for (i = 1; i < 9; i++) {
       var questionNum = "#Q" + i.toString();
       if (i < 5){
-        scoreOne += parseInt($( questionNum ).val());
+        scoreOne += parseInt($(questionNum).val());
       }
       else {
-        scoreTwo += parseInt($( questionNum ).val());
+        scoreTwo += parseInt($(questionNum).val());
       }
     }
 
