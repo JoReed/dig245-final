@@ -29,6 +29,7 @@ $(document).on('click','.submit',function(){
       else {
         scoreTwo += parseInt($( questionNum ).val());
       }
+      console.log(typeof parseInt($( questionNum ).val()));
     }
 
     // console.log($( "#surveyForm" ).val());
