@@ -14,12 +14,12 @@ function openGoodWebsite() {
 }
 
 $(document).on('click', '#startSurvey', function(){
-  $("#results").load('views/results.html');
+  $("#survey").load('views/survey.html');
 })
 
 
 $(document).on('click','#submit',function(){
-    $("#survey").load('views/survey.html');
+    $("#results").load('views/results.html');
 
     var scoreOne = 0;
     var scoreTwo = 0;
