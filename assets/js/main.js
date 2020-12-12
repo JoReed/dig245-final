@@ -30,8 +30,8 @@ $(document).on('click','.submit',function(){
         scoreTwo += $( questionNum ).val();
       }
     }
-    
-    console.log($( "#surveyForm" ).val());
+
+    // console.log($( "#surveyForm" ).val());
     console.log($( "#Q1" ).val());
     console.log(scoreOne, scoreTwo);
 });
