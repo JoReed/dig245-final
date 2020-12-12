@@ -22,7 +22,7 @@ $(document).on('click','.submit',function(){
     var scoreTwo = 0;
 
     for (i = 1; i < 9; i++) {
-      var questionNum = "#Q" + str(i);
+      var questionNum = "#Q" + i.toString();
       if (i < 5){
         scoreOne += $( questionNum ).val();
       }
@@ -33,5 +33,5 @@ $(document).on('click','.submit',function(){
 
     // console.log($( "#surveyForm" ).val());
     // console.log($( "#Q1" ).val());
-    console.log(scoreOne);
+    console.log(scoreOne, scoreTwo);
 });
