@@ -21,17 +21,17 @@ $(document).on('click','.submit',function(){
     var scoreOne = 0;
     var scoreTwo = 0;
 
-    // for (int i = 1; i < 9; i++) {
-    //   var questionNum = "#Q" + str(i);
-    //   if (1 < 5){
-    //     scoreOne += $( questionNum ).val();
-    //   }
-    //   else {
-    //     scoreTwo += $( questionNum ).val();
-    //   }
-    // }
+    for (i = 1; i < 9; i++) {
+      var questionNum = "#Q" + str(i);
+      if (i < 5){
+        scoreOne += $( questionNum ).val();
+      }
+      else {
+        scoreTwo += $( questionNum ).val();
+      }
+    }
+    
     console.log($( "#surveyForm" ).val());
-
-    console.log($( "Q1" ).val());
+    console.log($( "#Q1" ).val());
     console.log(scoreOne, scoreTwo);
 });
