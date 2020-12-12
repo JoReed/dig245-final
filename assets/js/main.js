@@ -20,7 +20,7 @@ $(document).on('click','.submit',function(){
 
     var scoreOne = 0;
     var scoreTwo = 0;
-    
+
     for (int i = 1; i < 9; i++) {
       var questionNum = "#Q" + str(i);
       if (1 < 5){
@@ -30,5 +30,6 @@ $(document).on('click','.submit',function(){
         scoreTwo += $( questionNum ).val();
       }
     }
+    console.log("Hello");
     console.log(scoreOne, scoreTwo);
 });
