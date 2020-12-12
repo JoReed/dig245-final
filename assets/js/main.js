@@ -13,10 +13,13 @@ function openGoodWebsite() {
   var goodWebsite = window.open("https://aluminumfencesdirect.net", "_blank");
 }
 
+$(document).on('click', '#startSurvey', function(){
+  $("#results").load('views/results.html');
+})
 
-console.log("Hello");
-$(document).on('click','.submit',function(){
-    $("#results").load('views/results.html');
+
+$(document).on('click','#submit',function(){
+    $("#survey").load('views/survey.html');
 
     var scoreOne = 0;
     var scoreTwo = 0;
@@ -29,10 +32,7 @@ $(document).on('click','.submit',function(){
       else {
         scoreTwo += parseInt($( questionNum ).val());
       }
-      console.log(typeof parseInt($( questionNum ).val()));
     }
 
-    // console.log($( "#surveyForm" ).val());
-    // console.log($( "#Q1" ).val());
     console.log(scoreOne, scoreTwo);
 });
