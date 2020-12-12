@@ -13,7 +13,7 @@ function openGoodWebsite() {
   var goodWebsite = window.open("https://aluminumfencesdirect.net", "_blank");
 }
 
-// loads in the
+// loads in the survey
 $(document).on('click', '#startSurvey', function(){
   $("#survey").load('views/survey.html');
 })
