@@ -32,6 +32,6 @@ $(document).on('click','.submit',function(){
     }
 
     // console.log($( "#surveyForm" ).val());
-    console.log($( "#Q1" ).val());
-    console.log(scoreOne, scoreTwo);
+    // console.log($( "#Q1" ).val());
+    console.log(scoreOne);
 });
