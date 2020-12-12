@@ -14,7 +14,7 @@ function openGoodWebsite() {
 }
 
 
-
+console.log("Hello");
 $(document).on('click','.submit',function(){
     $("#results").load('views/results.html');
 
