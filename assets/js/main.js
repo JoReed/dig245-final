@@ -37,8 +37,10 @@ $(document).on('click','#submit',function(){
     var avgTwo = scoreTwo/5;
     showResults();
 
-    $("#one").append("<p>90%</p>");
-    $("#two").append("<p>100%</p>");
+    var strOne = "<p>" + avgOne.toString() + "%</p>";
+    var strTwo = "<p>" + avgTwo.toString() + "%</p>";
+    $("#one").append(strOne);
+    $("#two").append(strTwo);
 
 
     // $("#one").getElementById('one').append("<p>%</p>")
