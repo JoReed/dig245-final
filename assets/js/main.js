@@ -14,9 +14,9 @@ function openGoodWebsite() {
 }
 
 // loads in the survey
-// $(document).on('click', '#startSurvey', function(){
-//   $("#survey").load('views/survey.html');
-// })
+$(document).on('click', '#startSurvey', function(){
+  $("#survey").load('views/survey.html');
+})
 // $( ".inner" ).append( "<p>Test</p>" );
 
 $(document).on('click','#submit',function(){
@@ -36,7 +36,7 @@ $(document).on('click','#submit',function(){
     }
     var avgOne = scoreOne/5;
     var avgTwo = scoreTwo/5;
-    
+
     $("#one").append("<p>%</p>");
     $("#two").append("<p>%</p>");
 
