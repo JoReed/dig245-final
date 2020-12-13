@@ -21,7 +21,7 @@ $(document).on('click', '#startSurvey', function(){
 // $( ".inner" ).append( "<p>Test</p>" );
 
 $(document).on('click','#submit',function(){
-    $("#survey").load('views/results.html');
+    // $("#survey").load('views/results.html');
 
     var scoreOne = 0;
     var scoreTwo = 0;
@@ -39,8 +39,8 @@ $(document).on('click','#submit',function(){
     var avgTwo = scoreTwo/5;
     showResults();
 
-    $("#one").append("<p>%</p>");
-    $("#two").append("<p>%</p>");
+    $("#one").append("<p>"+avgOne+"%</p>");
+    $("#two").append("<p>"+avgTwo+"%</p>");
 
 
     // $("#one").getElementById('one').append("<p>%</p>")
