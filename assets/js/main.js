@@ -34,6 +34,10 @@ $(document).on('click','#submit',function(){
         scoreTwo += parseInt($(questionNum).val());
       }
     }
+    var avgOne = scoreOne/5;
+    var avgTwo = scoreTwo/5;
 
+    $(document).getElementById('one').append("<p>%</p>")
+    $(document).getElementById('two').append("<p>%</p>")
     console.log(scoreOne, scoreTwo);
 });
