@@ -1,7 +1,7 @@
 // "use strict";
 // Function that shows the survey to the user
-function showSurvey() {
-    var T = document.getElementById("survey");
+function showResults() {
+    var T = document.getElementById("results");
     T.style.display = "block";  // <-- Set it to block
 }
 // Function that opens the bad websote
@@ -16,6 +16,7 @@ function openGoodWebsite() {
 // loads in the survey
 $(document).on('click', '#startSurvey', function(){
   $("#survey").load('views/survey.html');
+  $("#Q8").append("<p>%</p>");
 })
 // $( ".inner" ).append( "<p>Test</p>" );
 
@@ -36,6 +37,7 @@ $(document).on('click','#submit',function(){
     }
     var avgOne = scoreOne/5;
     var avgTwo = scoreTwo/5;
+    showResults();
 
     $("#one").append("<p>%</p>");
     $("#two").append("<p>%</p>");
