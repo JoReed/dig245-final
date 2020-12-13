@@ -16,9 +16,7 @@ function openGoodWebsite() {
 // loads in the survey
 $(document).on('click', '#startSurvey', function(){
   $("#survey").load('views/survey.html');
-  $("#Q8").append("<p>%</p>");
 })
-// $( ".inner" ).append( "<p>Test</p>" );
 
 $(document).on('click','#submit',function(){
     // $("#survey").load('views/results.html');
