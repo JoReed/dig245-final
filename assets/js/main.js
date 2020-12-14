@@ -33,8 +33,8 @@ $(document).on('click','#submit',function(){
         scoreTwo += parseInt($(questionNum).val());
       }
     }
-    var avgOne = scoreOne/80;
-    var avgTwo = scoreTwo/80;
+    var avgOne = (scoreOne/80)*100;
+    var avgTwo = (scoreTwo/80)*100;
     showResults();
 
     var strOne = "<p>" + avgOne.toString() + "%</p>";
