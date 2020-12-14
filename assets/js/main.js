@@ -42,8 +42,5 @@ $(document).on('click','#submit',function(){
     $("#one").append(strOne);
     $("#two").append(strTwo);
 
-
-    // $("#one").getElementById('one').append("<p>%</p>")
-    // $("#two").getElementById('two').append("<p>%</p>")
     console.log(scoreOne, scoreTwo);
 });
